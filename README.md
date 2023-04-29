@@ -1,13 +1,15 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Yinkai Xiong               |
+| Date         | 05/04/2023                 |
+| Course       | Spring                     |
+| Assignment # | Class project              |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+This is the term project of the MET CS665 course. The main purpose of this program
+is to build a program that able to access multiple legacy systems that use different
+database, file system. 
 
 # GitHub Repository Link:
 https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
@@ -17,13 +19,26 @@ https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
 
 For each assignment, please answer the following:
 
-- Explain the level of flexibility in your implementation, including how new object types can
+Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
+- This implement has high level of flexibility. When there is new type of legacy system
+that uses another type of file system or database, only need to create corresponding classes.
+And delete one type of concrete file system or database would not affect others.
+
+Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
+- This implementation is easy to understand. The only hard thing is to understand
+ the bridge pattern. 
+
+Describe how you have avoided duplicated code and why it is important.
+- Not much about reduce duplicated code. Since each concrete database/file system
+need to override the method for different operations.
+
+If applicable, mention any design patterns you have used and explain why they were
 chosen.
+- I used Adapter pattern and Bridge pattern. The purpose of adapter pattern is to 
+allow new system to access legacy system. The purpose of bridge pattern is to 
+decrease the amount of concrete object.(Like legacySystem1..2..3)
 
 
 # Maven Commands
