@@ -13,7 +13,7 @@ import edu.bu.met.cs665.bridge.FileSystem;
  * */
 
 public class Service {
-  final private FileSystem  oldSystem;
+  private final FileSystem  oldSystem;
 
   /**
    * Constructor method, take a FileSystem object to perform specific requests.

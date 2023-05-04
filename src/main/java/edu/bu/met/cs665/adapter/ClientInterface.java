@@ -9,6 +9,7 @@ package edu.bu.met.cs665.adapter;
  * And this is the Target Interface component in adapter patter.
  * */
 public interface ClientInterface {
-   String readRequest(String data);
-   String writeRequest(String data);
+  String readRequest(String data);
+
+  String writeRequest(String data);
 }

@@ -15,6 +15,7 @@ public class ConcreteDatabase2 implements Database {
   public ConcreteDatabase2(String authenticationInfo) {
     this.authenticationInfo = authenticationInfo;
   }
+
   /**
    * Connect database with basic information and prompt message if connected.
    * @return message indicate connected successful.

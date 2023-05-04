@@ -26,8 +26,11 @@ public class Main {
    */
   public static void main(String[] args) {
     String data = "Sample query.";
-    Service oldSystem1 = new Service(new ConcreteFileSystem1(new ConcreteDatabase1("authenticationInfo")));
+
+    Service oldSystem1 = new Service(new ConcreteFileSystem1(
+        new ConcreteDatabase1("authenticationInfo")));
     Adapter oldSystem1Adapter = new Adapter(oldSystem1);
+
     System.out.println("************ Read **********");
     oldSystem1Adapter.readRequest(data);
     System.out.println("************ Write **********");

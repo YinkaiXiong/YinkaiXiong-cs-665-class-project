@@ -12,7 +12,7 @@ is to build a program that able to access multiple legacy systems that use diffe
 database, file system. 
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/YinkaiXiong/cs-665-class-project
 
 # Implementation Description 
 
